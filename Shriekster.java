@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 public class Shriekster extends Enemy {
 
     public Shriekster () {
