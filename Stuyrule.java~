@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Stuyrule {
-
+    static int gender;
     // Main Method
     public static void main(String[] args) {
 	
@@ -16,7 +16,6 @@ public class Stuyrule {
 	Scanner s = new Scanner( System.in );
 	String n;
 	int color;
-	static int gender;
 	System.out.println("Are you a \n (1) Boy \n (2) Girl");
 	gender = s.nextInt();
 	System.out.println("Please enter your name:");
@@ -28,10 +27,13 @@ public class Stuyrule {
 	    color = s.nextInt();
 	}
 	System.out.println("You're on your way!");
-
+	
+	//Character Initialization 
+	Link l = new Link(n,color);
+	Zelda z = new Zelda(n,color);
     
     // Load room one
-    world.roomOne(n, color);
+    world.roomOne(l,z);
     }
     
     // **** INPUT BLOCK ****
@@ -231,4 +233,3 @@ public class Stuyrule {
 
 }
    
-    

@@ -104,7 +104,7 @@ public class Stuyrule {
 
         // Define valid action commands
         String[] actionCommands = { "look", "get", "read",
-				    "talk", "open", "attack","take","pull", "leave", "fight" };
+				    "talk", "open", "attack","take","pull", "leave", "fight", "use", "eat", "look at" };
 
         // Check for valid action command
         for (int i = 0; i < actionCommands.length; i++) {
