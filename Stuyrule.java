@@ -27,10 +27,13 @@ public class Stuyrule {
 	    color = s.nextInt();
 	}
 	System.out.println("You're on your way!");
-
+	
+	//Character Initialization 
+	Link l = new Link(n,color);
+	Zelda z = new Zelda(n,color);
     
     // Load room one
-    world.roomOne(n, color);
+    world.roomOne(l,z);
     }
     
     // **** INPUT BLOCK ****
@@ -230,4 +233,3 @@ public class Stuyrule {
 
 }
    
-    
