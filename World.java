@@ -25,7 +25,7 @@ public class World {
 			Battle b = new Battle();
 			Doorfight d = new Doorfight();
 			//Chair chair = new Chair();
-			Chair chair = new Chair();
+			//Chair chair = new Chair();
 			Door Frank = new Door();
 			//Teacher teacher = new Teacher();
             // Load room one
@@ -94,9 +94,11 @@ public class World {
 			//Chair chair = new Chair();
 				else {
 				    if (Stuyrule.gender == 1) {
+					Chair chair = new Chair();
 					b.battle(l, chair);
 				    }
 				    else if (Stuyrule.gender == 2){
+					Chair chair = new Chair();
 					b.battle(z, chair);
 				    }
 					roomOneEnemies.remove("chair");
