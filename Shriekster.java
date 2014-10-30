@@ -13,7 +13,7 @@ public class Shriekster extends Enemy {
 		if (rand.nextInt(100) + 1 <= accuracy - 5){
 			if (l.HP - (damage * multiplier + 10.0) >= 0){
 				System.out.println("The Shriekster's incredible Shrieks deal " + (damage * multiplier + 10.0) + " damage");
-				l.HP-=( damage * multiplier 10.0);
+				l.HP-=( damage * multiplier + 10.0);
 			}
 			else{
 			System.out.println("The Shriekster's incredible Shrieks deal " + (l.HP) + " damage");
