@@ -26,7 +26,7 @@ public class World {
 			Doorfight d = new Doorfight();
 			//Chair chair = new Chair();
 			//Chair chair = new Chair();
-			Door Frank = new Door();
+			//Door Frank = new Door();
 			//Teacher teacher = new Teacher();
             // Load room one
             Room roomOne = new Room();
@@ -78,6 +78,7 @@ public class World {
                 }
 
                 else if (input.equals("leave")) {
+				Door Frank = new Door();
 		     if (Stuyrule.gender == 1) {
 			 d.doorbattle(l, Frank);
 				    }
