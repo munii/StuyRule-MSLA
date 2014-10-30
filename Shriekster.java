@@ -4,10 +4,10 @@ public class Shriekster extends Enemy {
     public Shriekster () {
 	HP = 150.0;
 	maxHP = 150.0; //Make this low
-	damage =100.0; //High damage
+	damage = 50.0; //High damage
 	speed = 5; //Make this slow
 	defense = 20; //Tanky
-	multiplier = 2.0; //?? Just do whatever
+	multiplier = 2.25; //?? Just do whatever
     }
 	public void shriek(Player l){
 		Random rand = new Random();
