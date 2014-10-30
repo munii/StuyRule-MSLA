@@ -84,7 +84,7 @@ public class World {
 			 else if (Stuyrule.gender == 2){
 			 d.doorbattle(z, Frank);
 				    }
-                    this.roomTwo(Link l, Zelda z);
+                    this.roomTwo(l,z);
                 }
 	       
 		else if (input.equals("fight chair")) {
@@ -212,7 +212,7 @@ void roomTwo(Link l, Zelda z) {
                 else if (input.equals("leave")) {
                     System.out.println("You exit the room.");
                     System.out.println();
-                    this.roomThree(Link l, Zelda z);
+                    this.roomThree(l,z);
                 }// Leave to room 3 code goes here
 
                 // Catch-all for unavailable actions
@@ -287,7 +287,7 @@ void roomTwo(Link l, Zelda z) {
                 else if (input.equals("leave")) {
                     System.out.println("You exit the room.");
                     System.out.println();
-                    this.roomFour(Link l, Zelda z);
+                    this.roomFour(l,z);
                 }
 
                 // Catch-all for unavailable actions
@@ -384,7 +384,7 @@ void roomTwo(Link l, Zelda z) {
                 else if (input.equals("leave")) {
                     System.out.println("You exit the room.");
                     System.out.println();
-                    this.roomFive(Link l, Zelda z);
+                    this.roomFive(l, z);
                 }
 
                 // Catch-all for unavailable actions
@@ -476,8 +476,4 @@ void roomTwo(Link l, Zelda z) {
 		}
 	}
 				    
-				    
-				    
-
-		      
  
