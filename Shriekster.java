@@ -2,6 +2,7 @@ import java.util.*;
 public class Shriekster extends Enemy {
 
     public Shriekster () {
+	name = "Shriekster";
 	HP = 150.0;
 	maxHP = 150.0; //Make this low
 	damage = 50.0; //High damage
