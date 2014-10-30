@@ -19,7 +19,7 @@ public class Stuyrule {
 	System.out.println("Are you a \n (1) Boy \n (2) Girl");
 	gender = s.nextInt();
 	System.out.println("Please enter your name:");
-	n = s.nextLine();
+	n = s.next();
 	System.out.println("Welcome to Stuyrule, " + n + "! Last question before you go to homeroom- what's your favorite color out of these four? \n (1) Green \n (2) Red \n (3) Blue \n (4) Purple");
 	color = s.nextInt();
 	while ((color != 1) && (color != 2) && (color != 3) && (color != 4)){
