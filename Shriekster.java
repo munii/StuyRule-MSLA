@@ -22,6 +22,6 @@ public class Shriekster extends Enemy {
 			}
 		}
 		else{
-			System.out.println("The Shreikster opens his mouth but the words won't come out. He's choking now... (subtle Eminem reference)")
+			System.out.println("The Shreikster opens his mouth but the words won't come out. He's choking now... (subtle Eminem reference)");
 	}
 }
