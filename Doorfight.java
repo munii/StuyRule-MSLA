@@ -51,7 +51,7 @@ public class Doorfight {
 			}
 		else {
 			System.out.println("The Door lies shattered at your feet");
-			System.out.println("...");
+			System.out.println("What? Its a door... What did you expect?");
 			}
 		}
 	}
