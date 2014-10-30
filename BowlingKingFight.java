@@ -1,6 +1,6 @@
 import java.util.*;
 public class BowlingKingFight {
-	public void Bowlingfight(Master l, Bowlingking m) {
+	public void Bowlingfight(Player l, Bowlingking m) {
 		System.out.println("You think to challenge me!?"); 
 		System.out.println("I AM THE STRONGEST THERE IS!!!"); 
 		System.out.println("BOWLINGKING STRIKE!!!!"); 
