@@ -6,7 +6,7 @@ public class Shriekster extends Enemy {
 	maxHP = 150.0; //Make this low
 	damage =100.0; //High damage
 	speed = 5; //Make this slow
-	defense = 100; //Tanky
+	defense = 20; //Tanky
 	multiplier = 2.0; //?? Just do whatever
     }
 	public void shriek(Player l){
