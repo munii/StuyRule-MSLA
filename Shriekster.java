@@ -9,7 +9,7 @@ public class Shriekster extends Enemy {
 	multiplier = 2.0; //?? Just do whatever
     }
 	public void shriek(Player l){
-		random rand = new random();
+		Random rand = new Random();
 		if (rand.nextInt(100) + 1 <= accuracy - 5){
 			if (l.HP - (damage * multiplier + 10.0) >= 0){
 				System.out.println("The Shriekster's incredible Shrieks deal " + (damage * multiplier + 10.0) + " damage");
