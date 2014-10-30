@@ -2,7 +2,7 @@ import java.util.*;
 public class FinalBossbattle {
 	public void Finalbossfight(Player l, Moranondorf m) {
 		System.out.println("Moranondorf slowly rises from his desk"); //Desk? Still not sure what game this is
-		System.out.println("So you're the one whose been causing all this trouble")
+		System.out.println("So you're the one whose been causing all this trouble");
 		System.out.println("You have exceeded my expectations, Puny Freshman"); //Main chara is a freshman right??
 		System.out.println("But Now Your Path Ends Here!"); //Maybe too cheesy
 		System.out.println("None have withstood the power of the mighty Moranondorf!");
