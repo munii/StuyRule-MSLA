@@ -374,10 +374,10 @@ void roomTwo(Link l, Zelda z) {
 		else if (input.equals("use book") || input.equals("use overdue book")
                         || input.equals("look book")) {
                     if (Stuyrule.gender == 1){
-			bk.BowlingFight(l, k);
+			bk.Bowlingfight(l, k);
 		    }
 		    else if (Stuyrule.gender == 2){
-			bk.BowlingFight(z, k);
+			bk.Bowlingfight(z, k);
 		    }
                 }
 
@@ -463,7 +463,16 @@ void roomTwo(Link l, Zelda z) {
                     System.out.println("You already have the Goddess Sword!.");
                 }
 		      
-
+		else if (input.equals("use goddess sword") || input.equals("use sword")
+                        || input.equals("look goddess sword")) {
+                    System.out.println("It takes effort to swallow the sword whole, but damn are you pretty. Also, your damaged increased.");
+		    if (Stuyrule.gender == 1) {
+			l.damage *= 3;
+		    }
+		    else if (Stuyrule.gender == 2) {
+			z.damage *= 3;
+		    }
+                }
 
                 // Catch-all for unavailable actions
                 else if (!Stuyrule.isGameCommand(input)) {

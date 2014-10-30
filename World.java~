@@ -9,8 +9,7 @@ public class World {
             System.out.println("| s t u y r u l e |");
             System.out.println("+-----------------+");
             System.out.println();
-            System.out
-                    .println("Muni | Sean | Lucas | Ali");
+            System.out.println("Muni | Sean | Lucas | Ali");
             System.out.println("Pro Animis Potestateque Sapientiaque");
             System.out.println();
         }
@@ -22,9 +21,7 @@ public class World {
     
     
         // Start game
-         void roomOne(String name, int charcolor) {
-	     Link l = new Link(name, charcolor);
-	     Zelda z = new Zelda(name, charcolor);
+         void roomOne(Link l, Zelda z) {
 			Battle b = new Battle();
 			Doorfight d = new Doorfight();
 			//Chair chair = new Chair();
@@ -87,7 +84,7 @@ public class World {
 			 else if (Stuyrule.gender == 2){
 			 d.doorbattle(z, Frank);
 				    }
-                    this.roomTwo();
+                    this.roomTwo(l,z);
                 }
 	       
 		else if (input.equals("fight chair")) {
@@ -135,7 +132,7 @@ public class World {
 
 	 }
 
-void roomTwo() {
+void roomTwo(Link l, Zelda z) {
     Shriekster Lost = new Shriekster();
     Shrieksterfight sfight = new Shrieksterfight();
 
@@ -215,7 +212,7 @@ void roomTwo() {
                 else if (input.equals("leave")) {
                     System.out.println("You exit the room.");
                     System.out.println();
-                    this.roomThree();
+                    this.roomThree(l,z);
                 }// Leave to room 3 code goes here
 
                 // Catch-all for unavailable actions
@@ -231,7 +228,7 @@ void roomTwo() {
 
 }
 
- void roomThree() {
+ void roomThree(Link l, Zelda z) {
 
             // Load room two
             Room roomThree = new Room();
@@ -290,7 +287,7 @@ void roomTwo() {
                 else if (input.equals("leave")) {
                     System.out.println("You exit the room.");
                     System.out.println();
-                    this.roomFour();
+                    this.roomFour(l,z);
                 }
 
                 // Catch-all for unavailable actions
@@ -306,7 +303,7 @@ void roomTwo() {
 
  }
  
- void roomFour() {
+ void roomFour(Link l, Zelda z) {
      Bowlingking k = new Bowlingking();
 	     BowlingKingFight bk = new BowlingKingFight();
 
@@ -377,17 +374,17 @@ void roomTwo() {
 		else if (input.equals("use book") || input.equals("use overdue book")
                         || input.equals("look book")) {
                     if (Stuyrule.gender == 1){
-			bk.BowlingFight(l, k);
+			bk.Bowlingfight(l, k);
 		    }
 		    else if (Stuyrule.gender == 2){
-			bk.BowlingFight(z, k);
+			bk.Bowlingfight(z, k);
 		    }
                 }
 
                 else if (input.equals("leave")) {
                     System.out.println("You exit the room.");
                     System.out.println();
-                    this.roomFive();
+                    this.roomFive(l, z);
                 }
 
                 // Catch-all for unavailable actions
@@ -403,9 +400,9 @@ void roomTwo() {
 
  }
  
- void roomFive() {
+ void roomFive(Link l, Zelda z) {
 	Moranondorf moran = new Moranondorf();
-	Finalbossbattle fb = new Finalbossbattle();
+	FinalBossbattle fb = new FinalBossbattle();
 
             // Load room two
             Room roomFive = new Room();
@@ -475,10 +472,8 @@ void roomTwo() {
 			 
 			 
                 input = Stuyrule.getInput();
-}
+	    }
+		}
+	}
 				    
-				    
-				    
-
-		      
  
