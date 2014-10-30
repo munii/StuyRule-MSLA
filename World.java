@@ -93,12 +93,13 @@ public class World {
 					}
 			//Chair chair = new Chair();
 				else {
-				    if (Stuyrule.gender == 1) {
 					Chair chair = new Chair();
+				    if (Stuyrule.gender == 1) {
+					//Chair chair = new Chair();
 					b.battle(l, chair);
 				    }
 				    else if (Stuyrule.gender == 2){
-					Chair chair = new Chair();
+					//Chair chair = new Chair();
 					b.battle(z, chair);
 				    }
 					roomOneEnemies.remove("chair");
