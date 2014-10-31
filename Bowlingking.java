@@ -1,6 +1,7 @@
 import java.util.*;
 public class Bowlingking extends Enemy {
     public Bowlingking () {
+	name = "Bowling King";
 	HP = 300.0; //Make this high
 	maxHP = 300.0; 
 	damage = 500.0; //High damage

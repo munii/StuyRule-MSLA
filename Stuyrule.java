@@ -1,3 +1,4 @@
+//Stuyrule completed by Munawar S. Rahman, Sean Chu, and Lucas Weiner
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -104,7 +105,7 @@ public class Stuyrule {
 
         // Define valid action commands
         String[] actionCommands = { "look", "get", "read",
-				    "talk", "open", "attack","take","pull", "leave", "fight", "use", "eat", "look at" };
+				     "leave", "fight", "use", "eat", "look at" };
 
         // Check for valid action command
         for (int i = 0; i < actionCommands.length; i++) {
@@ -125,8 +126,7 @@ public class Stuyrule {
         }
 
         // Define valid system commands
-        String[] systemCommands = { "help", "inventory", "inv", "i", "load",
-				    "save", "restart", "quit", "exit", "menu", "m"};
+        String[] systemCommands = { "help", "inventory", "inv", "i", "quit", "exit", "menu", "m"};
 
         // Check for valid system command
         for (int i = 0; i < systemCommands.length; i++) {
@@ -146,11 +146,11 @@ public class Stuyrule {
 
             System.out.println("[Help]");
             System.out
-                    .println(" Command syntax: <command>(space)<something>, e.g. get book");
+                    .println(" Command syntax: <command>(space)<something>, e.g. get pencil");
             System.out
-                    .println(" Action commands: look, get, talk, move, leave, etc.");
+                    .println(" Action commands: look, get, use, eat, leave, fight");
             System.out
-                    .println(" System commands: help, inventory, menu, load, save, restart, quit");
+                    .println(" System commands: help, inventory, menu, quit");
             System.out
                     .println(" Tips: Typing \"i\" is a shortcut to view your inventory.");
 	    System.out.println(" Tips: Typing \"m\" is a shortcut to view your stats.");
@@ -182,7 +182,7 @@ public class Stuyrule {
 		}
 		System.out.println("Attack: " + Link.damage);
 		System.out.println("Hit Points: " + Link.HP);
-		System.out.println("Damage: " + Link.defense);
+		System.out.println("Defense: " + Link.defense);
 		System.out.println("Speed: " + Link.speed);
 		System.out.println("Accuracy: " + Link.accuracy);
 	    }
@@ -203,7 +203,7 @@ public class Stuyrule {
 		}
 		System.out.println("Attack: " + Zelda.damage);
 		System.out.println("Hit Points: " + Zelda.HP);
-		System.out.println("Damage: " + Zelda.defense);
+		System.out.println("Defense: " + Zelda.defense);
 		System.out.println("Speed: " + Zelda.speed);
 		System.out.println("Accuracy: " + Zelda.accuracy);
 	    }}
@@ -227,8 +227,6 @@ public class Stuyrule {
                 System.exit(0);
             }
         }
-
-        // Add load, save, restart functionality
     }
 
 }
